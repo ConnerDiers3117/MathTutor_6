@@ -25,7 +25,7 @@ void DisplaySummaryReport(const vector<vector<int> > &questions, int maxAttempts
 bool giveUserAttempts(string userName, vector<int> &row,int maxAttempts);
 int checkForLevelChange (int totalCorrect,int totalIncorrect,int currentLevel);
 void SaveCurrentGame (string userName, const vector<vector<int> > &mathQuestions);
-
+void LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions);
 
 
 #endif //MATH_TUTOR_H

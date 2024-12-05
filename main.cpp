@@ -59,6 +59,13 @@ int main() {
     DisplayJoke();
     userName = GetUserName();
 
+    //Load Save
+    try {
+        LoadPreviousGame(userName,questions );
+    }catch (runtime_error& e) {
+        cout << e.what() << endl;
+        cout << "Cannot Load Game!" << endl;
+    }
 
     //Random Joke sets
 
@@ -98,6 +105,8 @@ int main() {
         cout << e.what() << endl;
         cout << "Cannot Save Game!" << endl;
     }
+
+
     cout << ":::::::::::::::::::::::::::::::::::::" << endl;
 
     // display summary report

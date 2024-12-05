@@ -23,13 +23,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2969085c-a67f-401a-824a-6622d305ead1" name="Changes" comment="Cleaned up YesNoQuestion Function">
+    <list default="true" id="2969085c-a67f-401a-824a-6622d305ead1" name="Changes" comment="Fixed SaveCurrentGame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math_Tutor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Math_Tutor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_tutor.h" beforeDir="false" afterPath="$PROJECT_DIR$/math_tutor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733426388574</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed SaveCurrentGame">
+      <option name="closed" value="true" />
+      <created>1733427040789</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733427040789</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added it in" />
     <MESSAGE value="Cleaned up YesNoQuestion Function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up YesNoQuestion Function" />
+    <MESSAGE value="Fixed SaveCurrentGame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed SaveCurrentGame" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

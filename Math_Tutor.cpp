@@ -437,3 +437,46 @@ void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions)
 
 
 }
+
+int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
+    const string FILE_NAME = "mathtutor.txt";
+    string userInput = "?";
+    int userinput = 0;
+    ofstream outFS;
+    ifstream inFS;
+
+    int leftNum = 0;
+    int rightNum = 0;
+    char mathSymbol = '?';
+    int currentLevel = 0;
+
+
+    outFS.open(FILE_NAME);
+    if (!outFS.is_open()) {
+        cout << "Unable to open file " << FILE_NAME << endl;
+        throw runtime_error ("Unable to open file " + FILE_NAME);
+    }else {
+        userInput = YesNoQuestion(userInput + "Do you want to load your previous game?");
+    }
+    if (userInput == "y" || userInput == "yes") {
+        cout << "Loading Game Please Wait" << endl;
+        while (inFS >> currentLevel >> leftNum >> mathSymbol >> rightNum >> userInput) {
+            vector<int> question;  // Create an inner vector
+            question.push_back(currentLevel);
+            question.push_back(leftNum);
+            question.push_back(static_cast<int>(mathSymbol));
+            question.push_back(rightNum);
+            question.push_back(userinput);
+
+            // Add the inner vector to the outer vector
+            mathQuestions.push_back(question);
+
+        }
+    }else {
+        throw runtime_error ("Unable to load game from file " + FILE_NAME);
+
+    }
+    outFS.close();
+    cout <<mathQuestions.size() <<  " Questions Saved. " << endl;
+    return currentLevel;
+}
