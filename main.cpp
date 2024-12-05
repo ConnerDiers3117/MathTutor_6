@@ -92,7 +92,12 @@ int main() {
     // CheckForLevelChange
 
     DisplaySummaryReport(questions, maxAttempts);
-
+    try {
+        SaveCurrentGame(userName,questions);
+    }catch (runtime_error& e) {
+        cout << e.what() << endl;
+        cout << "Cannot Save Game!" << endl;
+    }
     cout << ":::::::::::::::::::::::::::::::::::::" << endl;
 
     // display summary report

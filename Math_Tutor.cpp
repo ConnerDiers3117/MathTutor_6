@@ -409,13 +409,13 @@ void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions)
     const string FILE_NAME = "mathtutor.txt";
     string userInput = "?";
     ofstream outFS;
-    userInput = YesNoQuestion(userInput);
+    userInput = YesNoQuestion(userInput + "Do you want to save?");
 
     if (userInput == "n" || userInput == "no") {
         cout << "Save Game cancelled";
         return;
     }else {
-        cout << "Saving Game Please Wait!";
+        cout << "Saving Game Please Wait!" << endl;
         outFS.open(FILE_NAME);
         if (!outFS.is_open()) {
             cout << "Unable to open file " << FILE_NAME << endl;
