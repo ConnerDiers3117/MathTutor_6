@@ -229,11 +229,11 @@ vector<int> mathGen(int currentLevel) {
 /****************************************************************************************************************
  Ask to  play again
 ****************************************************************************************************************/
-string YesNoQuestion(string userName, string question,string userInput) {
-    userInput = "?";
+string YesNoQuestion(string question ) {
+   string userInput = "?";
 
     while (true) {
-        cout << userName << " Do you want to continue (y = yes | n = no)? ";
+        cout << question;
         getline(cin, userInput);
 
         //to lowercase the user's input
@@ -405,11 +405,11 @@ int checkForLevelChange (int totalCorrect,int totalIncorrect,int currentLevel) {
     return totalCorrect + totalIncorrect; //uhuhuh
 }
 
-void SaveCurrentGame (string userName, const vector<vector<int>> &mathQuestions) {
+void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions) {
     const string FILE_NAME = "mathtutor.txt";
     string userInput = "?";
     ofstream outFS;
-    userInput = YesNoQuestion(userName) + ", do you want to save your game");
+    userInput = YesNoQuestion(userInput);
 
     if (userInput == "n" || userInput == "no") {
         cout << "Save Game cancelled";

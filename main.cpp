@@ -86,7 +86,7 @@ int main() {
 
         getline(cin, userInput);
         //clearing newline from the input buffer
-        userInput = AskToPlayAgain(userName);
+        userInput = YesNoQuestion(userName +"Do you want another question? ");
     } while (userInput == "yes" || userInput == "y");
     //end of the question loop
     // CheckForLevelChange
