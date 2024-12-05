@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/conne/OneDrive - Wayne State College/ MathTutor_6
+# Install script for directory: C:/Users/conne/OneDrive - Wayne State College/MathTutor6
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/conne/OneDrive - Wayne State College/ MathTutor_6/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/conne/OneDrive - Wayne State College/MathTutor6/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
