@@ -448,7 +448,9 @@ int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
     int leftNum = 0;
     int rightNum = 0;
     char mathSymbol = '?';
-    int currentLevel = 0;
+    int currentLevel = 1;
+    int correctAnswer = 0;
+    int numAttempts = 0;
 
 
     outFS.open(FILE_NAME);
@@ -460,17 +462,9 @@ int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
     }
     if (userInput == "y" || userInput == "yes") {
         cout << "Loading Game Please Wait" << endl;
-        while (inFS >> currentLevel >> leftNum >> mathSymbol >> rightNum >> userInput) {
-            vector<int> question;  // Create an inner vector
-            question.push_back(currentLevel);
-            question.push_back(leftNum);
-            question.push_back(static_cast<int>(mathSymbol));
-            question.push_back(rightNum);
-            question.push_back(userinput);
-
-            // Add the inner vector to the outer vector
+        while (inFS >> currentLevel >> leftNum >> mathSymbol >> rightNum >> userInput>> correctAnswer >> numAttempts) {
+          vector <int> question =  {currentLevel, leftNum, rightNum, userInput, correctAnswer, numAttempts};
             mathQuestions.push_back(question);
-
         }
     }else {
         throw runtime_error ("Unable to load game from file " + FILE_NAME);
