@@ -23,7 +23,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2969085c-a67f-401a-824a-6622d305ead1" name="Changes" comment="Got LoadPreviousGame, it doesnt actually work but it doesnt break the code" />
+    <list default="true" id="2969085c-a67f-401a-824a-6622d305ead1" name="Changes" comment="Got LoadPreviousGame, it doesnt actually work but it doesnt break the code">
+      <change beforePath="$PROJECT_DIR$/Math_Tutor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Math_Tutor.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733433438342</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Got LoadPreviousGame, it doesnt actually work but it doesnt break the code">
+      <option name="closed" value="true" />
+      <created>1733438847548</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733438847548</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
