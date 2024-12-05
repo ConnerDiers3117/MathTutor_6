@@ -1,3 +1,3 @@
-C:/Users/conne/OneDrive - Wayne State College/MathTutor6/cmake-build-debug/CMakeFiles/_MathTutor_6.dir
-C:/Users/conne/OneDrive - Wayne State College/MathTutor6/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/conne/OneDrive - Wayne State College/MathTutor6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/onale/CLionProjects/MathTutor_6B/cmake-build-debug/CMakeFiles/_MathTutor_6.dir
+C:/Users/onale/CLionProjects/MathTutor_6B/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/onale/CLionProjects/MathTutor_6B/cmake-build-debug/CMakeFiles/rebuild_cache.dir

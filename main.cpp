@@ -14,7 +14,7 @@ using namespace std;
 /********************************************************************************************
 
 Program:    Math TutorV5
-Programmers:Onalenna Mosadi Isaiah Guilliatt
+Programmers:Onalenna Mosadi Conner Diers
 Date:       10/30/24
 Version:    5
 GitHub:     https://github.com/onmosa01/MathTutorV5
