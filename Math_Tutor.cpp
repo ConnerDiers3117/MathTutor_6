@@ -1,10 +1,10 @@
-//
+
 /*
 Program:    Math TutorV5
-Programmers:Onalenna Mosadi Isaiah Guilliatt
+Programmers:Onalenna Mosadi Conner Diers
 Date:       11/08/20
 Version:    5
-GitHub:     https://github.com/onmosa01/MathTutorV5
+GitHub:    https://github.com/ConnerDiers3117/MathTutor_6
 Description:  The functions for the math tutor
 */
 #include <iostream> // for cout and cin, and plus left and right alignment
@@ -132,7 +132,7 @@ string GetUserName() {
 
     cout << "Please enter your name: ";
     getline(cin, userName); // This is is for spacing in names
-    cout << "Hello " << userName << ". Thank you for choosing our Silly Simple Math Tutor!" << endl;
+    cout << "Hello " << userName << ". Thank you for choosing our Silly Simple Math Tutor! " << endl;
     return userName;
 }
 
@@ -149,7 +149,7 @@ int GetNumericValue() {
         cin.clear(); //clear the error flag
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         //ignore the max input up to '\n'
-        cout << endl << "Invalid input!" << endl;
+        cout << endl << "Invalid input! " << endl;
         cout << "Please enter a number: ";
     } //end of number validation
 
@@ -217,7 +217,7 @@ vector<int> mathGen(int currentLevel) {
         } //end of mathType_MUL
 
         default: {
-            cout << "Math type generation error, please contact Jason or Jayden for assistance" << endl;
+            cout << "Math type generation error, please contact onalenna or conner for assistance" << endl;
             exit(-1);
         } //default for errors from mathType
     } //end of switch
@@ -300,7 +300,7 @@ void DisplaySummaryReport(const vector<vector<int> > &questions, int maxAttempts
             cout << setw(5) << right << numAttempts;
             totalCorrect++;
         } else {
-            cout << "Incorrect";
+            cout << " Incorrect ";
             totalIncorrect++;
         }
 
@@ -345,7 +345,7 @@ bool giveUserAttempts(string userName, vector<int> &row,int maxAttempts) {
             //User gets the question right
             //  add num attempts to end of row
             row.push_back(numAttempts);
-            cout << endl << "Congrats!! That was the correct answer." << endl;
+            cout << endl << " Congrats!! That was the correct answer." << endl;
             cout << endl;
             totalCorrect++;
             break;
@@ -383,7 +383,7 @@ int checkForLevelChange (int totalCorrect,int totalIncorrect,int currentLevel) {
         //Level increase
         currentRange -=LEVEL_CHANGE_RANGE;
         currentLevel++;
-        cout << "Congrats, you have proceeded to level " << currentLevel << endl;
+        cout << " Congrats, you have proceeded to level " << currentLevel << endl;
         totalCorrect = 0;
         totalIncorrect = 0;
         cout << "Your numbers can range from 1 - " << currentRange << endl;
@@ -392,8 +392,8 @@ int checkForLevelChange (int totalCorrect,int totalIncorrect,int currentLevel) {
 
         currentRange -= LEVEL_CHANGE_RANGE;
         currentLevel--;
-        cout << "Oh, no you've dropped to level " << currentLevel << endl;
-        cout << "Your numbers can range from 1 - " << currentRange << endl;
+        cout << " Oh, no you've dropped to level " << currentLevel << endl;
+        cout << " Your numbers can range from 1 - " << currentRange << endl;
         totalCorrect = 0;
         totalIncorrect = 0;
     } else {
@@ -410,7 +410,7 @@ void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions)
     const string FILE_NAME = "mathtutor.txt";
     string userInput = "?";
     ofstream outFS;
-    userInput = YesNoQuestion(userInput + "Do you want to save?");
+    userInput = YesNoQuestion(userInput + " Do you want to save ? ");
 
     if (userInput == "n" || userInput == "no") {
         cout << "Save Game cancelled";
@@ -464,19 +464,19 @@ int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
 
     outFS.open(FILE_NAME);
     if (!outFS.is_open()) {
-        cout << "Unable to open file " << FILE_NAME << endl;
+        cout << " Unable to open file " << FILE_NAME << endl;
         throw runtime_error ("Unable to open file " + FILE_NAME);
     }else {
         userInput = YesNoQuestion(userInput + "Do you want to load your previous game?");
     }
     if (userInput == "y" || userInput == "yes") {
-        cout << "Loading Game Please Wait" << endl;
+        cout << " Loading Game Please Wait " << endl;
         while (inFS >> currentLevel >> leftNum >> mathSymbol >> rightNum >> userInput>> correctAnswer >> numAttempts) {
           vector <int> question =  {(currentLevel,rightNum, userInput, correctAnswer, numAttempts, leftNum )
           } ; mathQuestions.push_back(question);
         };
     }else {
-        throw runtime_error ("Unable to load game from file " + FILE_NAME);
+        throw runtime_error (" Unable to load game from file " + FILE_NAME);
 
     }
     outFS.close();

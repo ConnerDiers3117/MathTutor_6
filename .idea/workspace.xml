@@ -23,11 +23,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2969085c-a67f-401a-824a-6622d305ead1" name="Changes" comment="Updated Save Game Function in mathtutor.cpp">
+    <list default="true" id="2969085c-a67f-401a-824a-6622d305ead1" name="Changes" comment="Fixed the bug, in mathTutor.cpp. It was just the syntax on line 476 and we forgot the error handling lib.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math_Tutor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Math_Tutor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733444069928</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed the bug, in mathTutor.cpp. It was just the syntax on line 476 and we forgot the error handling lib.">
+      <option name="closed" value="true" />
+      <created>1733444645329</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733444645329</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated Save Game Function in mathtutor.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Save Game Function in mathtutor.cpp" />
+    <MESSAGE value="Fixed the bug, in mathTutor.cpp. It was just the syntax on line 476 and we forgot the error handling lib." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the bug, in mathTutor.cpp. It was just the syntax on line 476 and we forgot the error handling lib." />
   </component>
 </project>

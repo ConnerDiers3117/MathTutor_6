@@ -60,13 +60,13 @@ int main() {
         LoadPreviousGame(userName,questions );
     }catch (runtime_error& e) {
         cout << e.what() << endl;
-        cout << "Cannot Load Game!" << endl;
+        cout << "Cannot Load Game! " << endl;
     }
 
     //Random Joke sets
     //
     //
-    cout << "How many attempts would you like for each question?" << endl;
+    cout << "How many attempts would you like for each question? " << endl;
     // Loop until the user enters numeric data
     while (!(cin >> maxAttempts)) {
         cin.clear(); //clear the error flag
@@ -102,14 +102,14 @@ int main() {
     }catch (runtime_error &e) {
         cout  << endl;
         cout << e.what()<< endl;
-        cout << "Cannot Save Game!" << endl;
+        cout << " Cannot Save Game! " << endl;
     }
 
 
     cout << ":::::::::::::::::::::::::::::::::::::" << endl;
 
     // display summary report
-    cout << "Thank you for choosing our Silly Simple Math Tutor!" << endl;
+    cout << "Thank you for choosing our Silly Simple Math Tutor! " << endl;
     cout << "Have a great day " << userName << endl;
 
     return 0;
