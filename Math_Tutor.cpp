@@ -8,7 +8,7 @@ GitHub:    https://github.com/ConnerDiers3117/MathTutor_6
 Description:  The functions for the math tutor
 */
 #include <iostream> // for cout and cin, and plus left and right alignment
-#include <cctype>   // to lower?
+#include <cctype>   //
 
 #include <cstdlib>  // to generate random numbers
 #include <string>   // needed to use string
