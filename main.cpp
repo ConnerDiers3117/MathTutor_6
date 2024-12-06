@@ -6,6 +6,7 @@
 #include <limits>   // needed for number validation
 #include <vector>   // needed to use vectors
 #include <iomanip>  // need for setw
+#include <stdexcept> // for error handling
 
 #include "math_tutor.h" // header file with prototypes
 
@@ -94,10 +95,13 @@ int main() {
     // CheckForLevelChange
 
     DisplaySummaryReport(questions, maxAttempts);
+
+
     try {
         SaveCurrentGame(userName,questions);
-    }catch (runtime_error& e) {
-        cout << e.what() << endl;
+    }catch (runtime_error &e) {
+        cout  << endl;
+        cout << e.what()<< endl;
         cout << "Cannot Save Game!" << endl;
     }
 

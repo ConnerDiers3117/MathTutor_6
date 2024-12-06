@@ -439,6 +439,7 @@ void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions)
 
     }
 
+    return;
 
 }
 
@@ -472,7 +473,7 @@ int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
         cout << "Loading Game Please Wait" << endl;
         while (inFS >> currentLevel >> leftNum >> mathSymbol >> rightNum >> userInput>> correctAnswer >> numAttempts) {
           vector <int> question =  {(currentLevel,rightNum, userInput, correctAnswer, numAttempts, leftNum )
-            mathQuestions.push_back(question)
+          } ; mathQuestions.push_back(question);
         };
     }else {
         throw runtime_error ("Unable to load game from file " + FILE_NAME);
