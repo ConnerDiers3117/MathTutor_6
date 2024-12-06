@@ -12,14 +12,11 @@
 using namespace std;
 
 /********************************************************************************************
-
 Program:    Math TutorV5
 Programmers:Onalenna Mosadi Conner Diers
 Date:       10/30/24
 Version:    5
 GitHub:     https://github.com/onmosa01/MathTutorV5
-
-
 This program is a Math Quiz of sorts. The code is supposed to go on forever.
 It will address you by name, and give you a randomly generated problem that
 will increase in difficulty as you progress. There is a switch statement for
@@ -29,7 +26,6 @@ attempts you get to answer the question. after you answer it will as you if
 you want to do another question. After you say you don't want another question
 it will display a report, showing every question, the correct answer, the level
 the math was on, the number of attempts and
-
  *******************************************************************************************/
 const int LEVEL_CHANGE_RANGE = 10;//deckares global varible for constatn interger for how much numbers increase on level up
 
@@ -40,7 +36,6 @@ const int LEVEL_CHANGE_RANGE = 10;//deckares global varible for constatn interge
 ***************************************************************************************/
 
 int main() {
-
     bool isCorrect = false;
 
     string userName = "?";
@@ -68,7 +63,7 @@ int main() {
     }
 
     //Random Joke sets
-
+    //
     //
     cout << "How many attempts would you like for each question?" << endl;
     // Loop until the user enters numeric data
@@ -114,4 +109,4 @@ int main() {
     cout << "Have a great day " << userName << endl;
 
     return 0;
-} //testing
+}

@@ -16,7 +16,6 @@ Description:  The functions for the math tutor
 #include <vector>   // needed to use vectors
 #include <iomanip>  // need for setw
 #include <fstream>
-
 #include <stdexcept>
 
 
@@ -229,7 +228,7 @@ vector<int> mathGen(int currentLevel) {
 /****************************************************************************************************************
  Ask to  play again
 ****************************************************************************************************************/
-string YesNoQuestion(string question ) {
+string YesNoQuestion(string question) {
    string userInput = "?";
 
     while (true) {
@@ -404,7 +403,9 @@ int checkForLevelChange (int totalCorrect,int totalIncorrect,int currentLevel) {
     } //end of level up if-else statement
     return totalCorrect + totalIncorrect; //uhuhuh
 }
-
+/****************************************************************************************
+Save the current game
+***************************************************************************************/
 void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions) {
     const string FILE_NAME = "mathtutor.txt";
     string userInput = "?";
@@ -413,16 +414,19 @@ void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions)
 
     if (userInput == "n" || userInput == "no") {
         cout << "Save Game cancelled";
-        return;
+        return ;
     }else {
         cout << "Saving Game Please Wait!" << endl;
         outFS.open(FILE_NAME);
         if (!outFS.is_open()) {
             cout << "Unable to open file " << FILE_NAME << endl;
-            throw runtime_error ("Unable to open file " + FILE_NAME);
+            throw runtime_error ("Unable to open file " + FILE_NAME + " for writing");
         }
+
         for (int i = 0; i < mathQuestions.size(); i++) {
-            outFS << mathQuestions[i][0] << " " << mathQuestions[i][1] << endl;
+           outFS << mathQuestions.at (i). at (0) << " "
+                 << mathQuestions.at (i).at (1) << " "
+                 << mathQuestions.at (i).at (2) << " " << endl;
 
 
     }
@@ -437,6 +441,10 @@ void SaveCurrentGame (string userName,const vector<vector<int> > &mathQuestions)
 
 
 }
+
+/****************************************************************************************
+Load Previous Game
+***************************************************************************************/
 
 int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
     const string FILE_NAME = "mathtutor.txt";
@@ -463,9 +471,9 @@ int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
     if (userInput == "y" || userInput == "yes") {
         cout << "Loading Game Please Wait" << endl;
         while (inFS >> currentLevel >> leftNum >> mathSymbol >> rightNum >> userInput>> correctAnswer >> numAttempts) {
-          vector <int> question =  {currentLevel, leftNum, rightNum, userInput, correctAnswer, numAttempts};
-            mathQuestions.push_back(question);
-        }
+          vector <int> question =  {(currentLevel,rightNum, userInput, correctAnswer, numAttempts, leftNum )
+            mathQuestions.push_back(question)
+        };
     }else {
         throw runtime_error ("Unable to load game from file " + FILE_NAME);
 

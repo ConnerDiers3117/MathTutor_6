@@ -1,23 +1,4 @@
 # ninja log v6
-5	829	7551156682037478	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
+6	563	7542642887459550	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	bfcd8b4623e397e
 565	747	7542642893061163	_MathTutor_6.exe	3a58c7afdb8c4172
-4	796	7551159819969069	CMakeFiles/_MathTutor_6.dir/Math_Tutor.cpp.obj	f1f66331a4b88dfb
-9	780	7551289366488285	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
-36	869	7551289366763518	CMakeFiles/_MathTutor_6.dir/Math_Tutor.cpp.obj	f1f66331a4b88dfb
-6	1222	7551296248875994	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
-49	1257	7551296249300653	CMakeFiles/_MathTutor_6.dir/Math_Tutor.cpp.obj	f1f66331a4b88dfb
-1259	1537	7551296261395787	_MathTutor_6.exe	4c5cbe3039a02fcd
-6	1236	7551301574489869	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
-43	1303	7551301574867252	CMakeFiles/_MathTutor_6.dir/Math_Tutor.cpp.obj	f1f66331a4b88dfb
-1303	1564	7551301587456061	_MathTutor_6.exe	4c5cbe3039a02fcd
-13	1258	7551349468465394	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
-7	1632	7551356780995274	CMakeFiles/_MathTutor_6.dir/Math_Tutor.cpp.obj	f1f66331a4b88dfb
-1633	1913	7551356797259676	_MathTutor_6.exe	4c5cbe3039a02fcd
-10	886	7551360008209653	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
-43	971	7551360008542809	CMakeFiles/_MathTutor_6.dir/Math_Tutor.cpp.obj	f1f66331a4b88dfb
-972	1161	7551360017829550	_MathTutor_6.exe	4c5cbe3039a02fcd
-13	1212	7551360873787619	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
-1213	1459	7551360885774169	_MathTutor_6.exe	4c5cbe3039a02fcd
-43	1285	7551364170926739	CMakeFiles/_MathTutor_6.dir/Math_Tutor.cpp.obj	f1f66331a4b88dfb
-7	787	7551364858856651	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	c360714403770161
-788	976	7551364866665733	_MathTutor_6.exe	4c5cbe3039a02fcd
+40	2884	7551456849215295	CMakeFiles/_MathTutor_6.dir/main.cpp.obj	29a59c59b4d585d5
