@@ -13,11 +13,11 @@
 using namespace std;
 
 /********************************************************************************************
-Program:    Math TutorV5
+Program:    Math TutorV6
 Programmers:Onalenna Mosadi Conner Diers
-Date:       10/30/24
-Version:    5
-GitHub:     https://github.com/onmosa01/MathTutorV5
+Date:       12/05/24
+Version:   6
+GitHub:https://github.com/ConnerDiers3117/MathTutor_6
 This program is a Math Quiz of sorts. The code is supposed to go on forever.
 It will address you by name, and give you a randomly generated problem that
 will increase in difficulty as you progress. There is a switch statement for

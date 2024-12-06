@@ -1,9 +1,9 @@
 /*
-Program:    Math TutorV5
-Programmers:Onalenna Mosadi Isaiah Guilliatt
-Date:       11/08/20
-Version:    5
-GitHub:     https://github.com/onmosa01/MathTutorV5
+Program:    Math TutorV6
+Programmers:Onalenna Mosadi Conner Diers
+Date:       12/06/24
+Version:    6
+GitHub:     https://github.com/ConnerDiers3117/MathTutor_6
 Description:  Header File
 */
 

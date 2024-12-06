@@ -1,9 +1,9 @@
 
 /*
-Program:    Math TutorV5
+Program:    Math TutorV6
 Programmers:Onalenna Mosadi Conner Diers
-Date:       11/08/20
-Version:    5
+Date:       12/06/24
+Version:    6
 GitHub:    https://github.com/ConnerDiers3117/MathTutor_6
 Description:  The functions for the math tutor
 */
@@ -467,7 +467,7 @@ int LoadPreviousGame (string userName, vector<vector<int> > &mathQuestions) {
         cout << " Unable to open file " << FILE_NAME << endl;
         throw runtime_error ("Unable to open file " + FILE_NAME);
     }else {
-        userInput = YesNoQuestion(userInput + "Do you want to load your previous game?");
+        userInput = YesNoQuestion(userInput + " Do you want to load your previous game?");
     }
     if (userInput == "y" || userInput == "yes") {
         cout << " Loading Game Please Wait " << endl;
